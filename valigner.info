@@ -1,0 +1,14 @@
+name = Valigner
+description = Valigner uses js and css to vertical align blocks
+package = Project
+core = 7.x
+
+; Custom
+dependencies[] = less
+dependencies[] = equalheights
+
+; ASSETS
+; CSS
+stylesheets[all][] = less/valigner.less
+; JS
+scripts[] = js/valigner.js

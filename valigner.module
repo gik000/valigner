@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file Valigner module file
+ */
+
+
+/**
+ * Implements hook_init().
+ */
+function valigner_init() {
+  // Getting status of valignerJs.
+  $jsEnabled = variable_get('valigner_js_enabled',false);
+  // Add settings to JS.
+  drupal_add_js(array('valigner' => array('jsEnabled' => $jsEnabled)), array('type' => 'setting'));
+}

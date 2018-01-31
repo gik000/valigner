@@ -1,0 +1,41 @@
+// NOT TRACKED YET
+// i.e.: Script is not passed yet, the class is still without parent.
+.valigner{
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  //min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  &.valigner-top{
+    -webkit-align-items: flex-start; /* Safari 7.0+ */
+    align-items: flex-start;
+  }
+  &.valigner-middle{
+    -webkit-align-items: center; /* Safari 7.0+ */
+    vertical-align:center;
+  }
+  &.valigner-bottom{
+    -webkit-align-items: flex-end; /* Safari 7.0+ */
+    align-items: flex-end;
+  }
+}
+
+// TRACKED
+// i.e.: Script is passed. Hierarchical structure has created.
+.valigner-granpa{
+  display: table;
+  .valigner-pa{
+    display: table-row;
+    .valigner{
+      display: table-cell;
+      &.valigner-top{
+        vertical-align:top;
+      }
+      &.valigner-middle{
+        vertical-align:middle;
+      }
+      &.valigner-bottom{
+        vertical-align:bottom;
+      }
+    }
+  }
+}
