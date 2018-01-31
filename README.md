@@ -22,3 +22,8 @@ It works good with twitter bootstrap.</p>
 <h2>Maintenance</h2>
 <p>This module is not complete and it does not fully cover the same functionality for old browsers.
 It now supports only the browsers that understand "flex", check them out https://caniuse.com/#feat=flexbox.</p>
+
+<h2>References</h2>
+<ul>
+  <li>https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/</li>
+</ul>
