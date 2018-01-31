@@ -6,6 +6,7 @@ It works good with twitter bootstrap.
  
 <h2>Example</h2>
 In this example the classes will align all block on the bottom.
+
 ```html
 <div class="container valigner valigner-bottom">
   <div class="col-sm-2">
